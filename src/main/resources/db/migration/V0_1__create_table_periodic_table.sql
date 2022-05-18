@@ -21,7 +21,7 @@ CREATE TABLE `periodic_table`
     `type`                VARCHAR(255) NULL DEFAULT NULL,
     `atomic_radius`       DOUBLE       NULL DEFAULT NULL,
     `electronegativity`   DOUBLE       NULL DEFAULT NULL,
-    `first_Ionization`    DOUBLE       NULL DEFAULT NULL,
+    `first_ionization`    DOUBLE       NULL DEFAULT NULL,
     `density`             DOUBLE       NULL DEFAULT NULL,
     `melting_point`       DOUBLE       NULL DEFAULT NULL,
     `boiling_point`       DOUBLE       NULL DEFAULT NULL,

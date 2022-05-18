@@ -23,67 +23,67 @@ import java.util.Objects;
 @NoArgsConstructor
 @Entity
 @Table(name = "periodic_table")
-public class PeriodicTable extends BasicEntity {
+public class ChemicalElement extends BasicEntity {
 
     @Serial
     private static final long serialVersionUID = 234232342L;
 
     @Column(name = "atomic_number")
-    private int atomicNumber;
+    private Integer atomicNumber;
     @Column(name = "element")
     private String element;
     @Column(name = "symbol")
     private String symbol;
     @Column(name = "atomic_mass")
-    private double atomicMass;
+    private Double atomicMass;
     @Column(name = "number_of_neutrons")
-    private int numberOfNeutrons;
+    private Integer numberOfNeutrons;
     @Column(name = "number_of_protons")
-    private int numberOfProtons;
+    private Integer numberOfProtons;
     @Column(name = "number_of_electrons")
-    private int numberOfElectrons;
+    private Integer numberOfElectrons;
     @Column(name = "period")
-    private int period;
+    private Integer period;
     @Column(name = "group")
-    private int group;
+    private Integer group;
     @Column(name = "phase")
     private String phase;
     @Column(name = "radioactive")
-    private boolean radioactive;
+    private Boolean radioactive;
     @Column(name = "natural")
-    private boolean natural;
+    private Boolean natural;
     @Column(name = "metal")
-    private boolean metal;
+    private Boolean metal;
     @Column(name = "nonmetal")
-    private boolean nonmetal;
+    private Boolean nonmetal;
     @Column(name = "metalloid")
-    private boolean metalloid;
+    private Boolean metalloid;
     @Column(name = "type")
     private String type;
     @Column(name = "atomic_radius")
-    private double atomicRadius;
+    private Double atomicRadius;
     @Column(name = "electronegativity")
-    private double electronegativity;
-    @Column(name = "first_Ionization")
-    private double firstIonization;
+    private Double electronegativity;
+    @Column(name = "first_ionization")
+    private Double firstIonization;
     @Column(name = "density")
-    private double density;
+    private Double density;
     @Column(name = "melting_point")
-    private double meltingPoint;
+    private Double meltingPoint;
     @Column(name = "boiling_point")
-    private double boilingPoint;
+    private Double boilingPoint;
     @Column(name = "number_of_isotopes")
-    private int numberOfIsotopes;
+    private Integer numberOfIsotopes;
     @Column(name = "discoverer")
     private String discoverer;
     @Column(name = "year")
-    private int year;
+    private Integer year;
     @Column(name = "specific_heat")
-    private double specificHeat;
+    private Double specificHeat;
     @Column(name = "number_of_shells")
-    private int numberOfShells;
+    private Integer numberOfShells;
     @Column(name = "number_of_valence")
-    private int numberOfValence;
+    private Integer numberOfValence;
 
     @Override
     public boolean equals(Object o) {
@@ -93,7 +93,7 @@ public class PeriodicTable extends BasicEntity {
         if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) {
             return false;
         }
-        PeriodicTable that = (PeriodicTable) o;
+        ChemicalElement that = (ChemicalElement) o;
         return getId() != null && Objects.equals(getId(), that.getId());
     }
 
